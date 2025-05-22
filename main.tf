@@ -16,3 +16,7 @@ locals {
 output "out" {
   value = local.test
 }
+
+output "out" {
+  value = local.parameter_key_alias
+}
