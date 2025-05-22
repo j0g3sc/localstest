@@ -17,6 +17,6 @@ output "out" {
   value = local.test
 }
 
-output "out" {
+output "out2" {
   value = local.parameter_key_alias
 }
