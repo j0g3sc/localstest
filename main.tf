@@ -10,6 +10,7 @@ variable "secret_name" {
 
 locals {
   test = "%{ if var.suffix != "" }${var.secret_name}-${var.suffix}%{ else }${var.secret_name}%{ endif }"
+  parameter_key_alias = "%{ if var.suffix != "" }alias/ssm-parameter-key-${var.suffix}%{ else }alias/ssm-parameter-key%{ endif }"
 }
 
 output "out" {
